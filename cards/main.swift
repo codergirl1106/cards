@@ -1,11 +1,12 @@
-//
-//  main.swift
-//  cards
-//
-//  Created by Sophia Yan on 10/28/22.
-//
+var deck = DeckOfPlayingCards()
+print(deck.drawCard())
+print(deck.drawCard())
+print(deck.drawCard())
+let hands = deck.dealHands(numPlayers: 4, numCards: 5)
+for h in hands {
+  print(h)
+}
 
-import Foundation
-
-print("Hello, World!")
-
+print(deck.count)
+deck.collectAllCards()
+print(deck.count)
